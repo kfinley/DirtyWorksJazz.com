@@ -1,0 +1,9 @@
+{
+  "name": "DirtyWorksJazz.com",
+  "short_name": "DirtyWorksJazz.com",
+  "theme_color": "#FFF",
+  "background_color": "#FFF",
+  "display": "standalone",
+  "start_url": "/?source=standalone&medium=0.0.1",
+  "scope": "/"
+}

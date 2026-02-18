@@ -1,0 +1,22 @@
+services:
+  dirtyworksjazz.dev:
+    container_name: dirtyworksjazz.dev
+    build:
+      context: ./
+      dockerfile: ./.devcontainer/Dockerfile
+    environment:
+      DOCKER_HOST: unix:///var/run/docker.sock
+      AWS_REGION: us-east-1
+      AWS_ACCESS_KEY_ID: S3RVER
+      AWS_SECRET_ACCESS_KEY: S3RVER
+    command: sleep infinity
+
+  dirtyworksjazz.web:
+    container_name: dirtyworksjazz.web
+    image: node:22
+    ports:
+      - "8080:8080"
+    working_dir: /vite-client
+    command: sh -c "npm run dev:client:docker"
+    volumes:
+      - .:/vite-client

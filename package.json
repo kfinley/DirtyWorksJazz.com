@@ -1,0 +1,32 @@
+{
+  "name": "dirtyworksjazz.com",
+  "version": "0.0.1",
+  "description": "Source for DirtyWorksJazz.com",
+  "main": "index.js",
+  "workspaces": [
+    "/",
+    "packages/*",
+    "infrastructure",
+    "services/*"
+  ],
+  "author": {
+    "name": "Kyle Finley",
+    "email": "kyle@kylefinley.net"
+  },
+  "license": "MIT",
+  "scripts": {
+    "containers:restart": "./.devcontainer/scripts/local-containers.sh start dirtyworksjazz.dev",
+    "build:clean": "npm run clean:js-files && npm run build:client",
+    "build:cdk": "npm run build -w @dirtyworksjazz.com/infrastructure",
+    "build:client": "npm run generate-sitemap && npm run build -w @dirtyworksjazz.com/vue-client && npm run post-build:fix-img-paths",
+    "cdk": "cd infrastructure && cdk cli-telemetry --disable && npm run cdk",
+    "clean:js-files": "./.devcontainer/scripts/clean-js-files.sh",
+    "dev:init": "./.devcontainer/scripts/dev-init.sh",
+    "dev:client:docker": "npm run dev:docker -w packages/vue-client",
+    "generate-sitemap": "./infrastructure/scripts/generate-sitemap.sh ./packages/vue-client/public/sitemap.xml",
+    "i:prod": "set NODE_ENV=production && npm i --omit=dev --ignore-scripts",
+    "post-build:fix-img-paths": "./infrastructure/scripts/fix-img-paths.sh",
+    "smoke": "npm run build:clean && npm run cdk synth",
+    "test:cdk": "npm run test -w @dirtyworksjazz.com/infrastructure"
+  }
+}

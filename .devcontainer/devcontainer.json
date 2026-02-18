@@ -1,0 +1,47 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/typescript-node
+{
+	"name": "Node.js & TypeScript",
+	"dockerComposeFile": [
+		"../dev-compose.yml",
+		"docker-compose.yml"
+	],
+	"service": "dirtyworksjazz.dev",
+	"workspaceFolder": "/workspace",
+
+	 "mounts": [
+		// mount .aws for credentials
+		"source=${localEnv:HOME}${localEnv:USERPROFILE}/.aws,target=/home/node/.aws,type=bind,consistency=cached"
+  	],
+	"customizations": {
+		"vscode": {
+			"settings": {
+				// "terminal.integrated.shell.linux": "/bin/zsh"
+				"terminal.integrated.defaultProfile.linux": "zsh",
+				"terminal.integrated.profiles.linux": {
+					"zsh": {
+						"path": "/bin/zsh"
+					}
+				}
+			},
+			"extensions": [
+				"ms-azuretools.vscode-containers",
+				"ms-azuretools.vscode-docker",
+				"dbaeumer.vscode-eslint",
+				"eamodio.gitlens",
+				"bierner.markdown-preview-github-styles",
+				"esbenp.prettier-vscode",
+				"streetsidesoftware.code-spell-checker",
+        		"cschleiden.vscode-github-actions",
+				"Vue.volar"
+			]
+		}
+	},
+
+	"postStartCommand": "npm run dev:init",
+
+	"remoteUser": "node",
+	"features": {
+		"ghcr.io/devcontainers/features/aws-cli:1": {}
+	}
+}

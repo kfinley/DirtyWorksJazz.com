@@ -1,0 +1,42 @@
+{
+  "title": "Kyle Finley & The Dirty Works Jazz Band - San Francisco, CA",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "San Francisco based jazz group led by Kyle Finley. The Dirty Works Jazz Band plays gigs and hosts jazz jams. Catch us at The Lucky Horseshoe, Persona, or Paris 75 for our Burlesque Jazz Jam!"
+    },
+    {
+      "itemprop": "description",
+      "content": "San Francisco based jazz group led by Kyle Finley. The Dirty Works Jazz Band plays gigs and hosts jazz jams. Catch us at The Lucky Horseshoe, Persona, or Paris 75 for our Burlesque Jazz Jam!"
+    },
+    {
+      "property": "og:description",
+      "content": "San Francisco based jazz group led by Kyle Finley. The Dirty Works Jazz Band plays gigs and hosts jazz jams. Catch us at The Lucky Horseshoe, Persona, or Paris 75 for our Burlesque Jazz Jam!"
+    },
+    {
+      "itemprop": "name",
+      "content": "Kyle Finley & The Dirty Works Jazz Band - San Francisco, CA"
+    },
+    {
+      "property": "og:title",
+      "content": "Kyle Finley & The Dirty Works Jazz Band - San Francisco, CA"
+    },
+    {
+      "property": "og:site_name",
+      "content": "Kyle Finley & The Dirty Works Jazz Band - San Francisco, CA"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://DirtyWorksJazz.com/"
+    },
+    {
+      "property": "og:image",
+      "content": "https://kylefinley.net/assets/dirty-works-jazz.jpg"
+    }
+  ]
+}

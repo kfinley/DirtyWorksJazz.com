@@ -1,0 +1,42 @@
+{
+  "title": "Kyle Finley & The Dirty Works Jazz Band - San Francisco, CA",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "One of San Francisco's hardest swingin' jazz bands! We host several weekly jazz jams featuring local players and a burlesque dancer the 1st Thursday @ Paris 75."
+    },
+    {
+      "itemprop": "description",
+      "content": "One of San Francisco's hardest swingin' jazz bands! We host several weekly jazz jams featuring local players and a burlesque dancer the 1st Thursday @ Paris 75."
+    },
+    {
+      "property": "og:description",
+      "content": "One of San Francisco's hardest swingin' jazz bands! We host several weekly jazz jams featuring local players and a burlesque dancer the 1st Thursday @ Paris 75."
+    },
+    {
+      "itemprop": "name",
+      "content": "Kyle Finley & The Dirty Works Jazz Band - San Francisco, CA"
+    },
+    {
+      "property": "og:title",
+      "content": "Kyle Finley & The Dirty Works Jazz Band - San Francisco, CA"
+    },
+    {
+      "property": "og:site_name",
+      "content": "Kyle Finley & The Dirty Works Jazz Band - San Francisco, CA"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://DirtyWorksJazz.com/"
+    },
+    {
+      "property": "og:image",
+      "content": "https://kylefinley.net/assets/dirty-works-jazz.jpg"
+    }
+  ]
+}

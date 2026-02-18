@@ -1,0 +1,8 @@
+node_modules
+
+# macOS
+.DS_Store
+
+# CDK
+cdk.out
+cdk.out.yaml
