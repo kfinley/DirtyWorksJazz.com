@@ -22,7 +22,7 @@ jobs:
 
       - name: Install & Build
         run: |
-          npm run i:prod 
+          npm i 
           npm run build:client
 
       - name: Configure AWS Credentials

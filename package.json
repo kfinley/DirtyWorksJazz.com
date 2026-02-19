@@ -24,7 +24,7 @@
     "dev:init": "./.devcontainer/scripts/dev-init.sh",
     "dev:client:docker": "npm run dev:docker -w packages/vue-client",
     "generate-sitemap": "./infrastructure/scripts/generate-sitemap.sh ./packages/vue-client/public/sitemap.xml",
-    "i:prod": "set NODE_ENV=production && npm i --omit=dev --ignore-scripts",
+    "i:prod": "npm i --omit=dev",
     "post-build:fix-img-paths": "./infrastructure/scripts/fix-img-paths.sh",
     "smoke": "npm run build:clean && npm run cdk synth",
     "super-clean": "rm -rf node_modules && rm -rf package-lock.json && rm -rf infrastructure/cdk.out && rm -rf ./infrastructure/node_modules && rm -rf ./packages/vue-client/node_modules && rm -rf ./packages/vue-client/dist && npm run clean:js-files",
