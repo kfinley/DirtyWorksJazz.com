@@ -1,11 +1,11 @@
 <script setup lang="ts">
 import EventItem from './EventItem.vue'
 import CalendarDateIcon from './icons/IconCalendarDate.vue'
-
 </script>
 
 <template>
-  <EventItem>
+  <!-- 
+   <EventItem>
     <template #icon>
       <CalendarDateIcon month="Feb" day="18" weekday="Wednesday" class="icon" />
     </template>
@@ -32,6 +32,7 @@ import CalendarDateIcon from './icons/IconCalendarDate.vue'
       >Kyle Finley Bass, Richard Batelaan Sax & Keys, & Jammers</i
     >
   </EventItem>
+  -->
 
   <EventItem>
     <template #icon>
@@ -68,13 +69,39 @@ import CalendarDateIcon from './icons/IconCalendarDate.vue'
       <CalendarDateIcon month="Feb" day="27" weekday="Friday" class="icon" />
     </template>
     <template #heading
-      >Dirty Works Acoustic Jam @ Hop Oast <br /><i
-        >Friday Feb. 27th, 5 - 7 PM</i
-      ></template
+      >Dirty Works Acoustic Jam @ Hop Oast <br /><i>Friday Feb. 27th, 5 - 7 PM</i></template
     >
     Acoustic Jazz Jam at
     <a href="https://hopoast.com" target="hopoast">Hop Oast Brewery</a> 2887 Bryant St., SF, CA.<br />
     <i>Kyle Finley Bass with jammers</i>
+  </EventItem>
+
+  <EventItem>
+    <template #icon>
+      <CalendarDateIcon month="Mar" day="2" weekday="Monday" class="icon" />
+    </template>
+    <template #heading
+      >Dirty Works Jazz Night @ Persona <br /><i>Monday Mar. 2nd, 8 - 1:30 AM</i></template
+    >
+    Open Jazz Jam at <a href="https://www.persona-sf.com" target="persona">Persona</a> 685 Sutter
+    St., SF, CA<br />
+    <i
+      >Kyle Finley Bass, Jeff Orchard Keys, Richard Batelaan Sax & Keys, & Tim Shae Guitar &
+      Drums</i
+    >
+  </EventItem>
+
+  <EventItem>
+    <template #icon>
+      <CalendarDateIcon month="Mar" day="4" weekday="Wednesday" class="icon" />
+    </template>
+    <template #heading
+      >Wednesday Jazz Trio @ Paris 75 <br /><i>Wednesday Mar. 4th, 7:30 - 10:30 PM</i></template
+    >
+    Jazz at <a href="https://lppsf.com" target="paris75">Paris 75</a> 515 Broadway, North Beach SF, CA<br />
+    <i
+      >Kyle Finley Bass, Chris Guitar, Eden Chaloemtiarana Drums</i
+    >
   </EventItem>
 </template>
 

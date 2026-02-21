@@ -29,5 +29,8 @@
     "smoke": "npm run build:clean && npm run cdk synth",
     "super-clean": "rm -rf node_modules && rm -rf package-lock.json && rm -rf infrastructure/cdk.out && rm -rf ./infrastructure/node_modules && rm -rf ./packages/vue-client/node_modules && rm -rf ./packages/vue-client/dist && npm run clean:js-files",
     "test:cdk": "npm run test -w @dirtyworksjazz.com/infrastructure"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0"
   }
 }
