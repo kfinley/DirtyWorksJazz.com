@@ -5,7 +5,6 @@ import * as origins from 'aws-cdk-lib/aws-cloudfront-origins';
 import * as route53 from 'aws-cdk-lib/aws-route53';
 import * as targets from 'aws-cdk-lib/aws-route53-targets';
 import * as s3deploy from 'aws-cdk-lib/aws-s3-deployment';
-import { Certificate, DnsValidatedCertificate } from 'aws-cdk-lib/aws-certificatemanager';
 import { Construct } from 'constructs';
 import { DataStores } from './data-stores';
 
@@ -15,7 +14,7 @@ export interface InfraStackProps extends cdk.StackProps {
 }
 export class InfrastructureStack extends cdk.Stack {
   private hostedZone: route53.PublicHostedZone;
-  private certificate: DnsValidatedCertificate;
+  private certificate: acm.ICertificateRef;
   private cloudFrontDistribution: cloudfront.Distribution;
 
   constructor(scope: Construct, id: string, props?: InfraStackProps) {
@@ -43,28 +42,21 @@ export class InfrastructureStack extends cdk.Stack {
     // Confirm DNS works using dig before applying step 2
     // Deploy Step 2: Create Certificate
     const step2 = () => {
-      this.certificate = new acm.DnsValidatedCertificate(this, 'CertificateManagerCertificate', {
-        domainName,
-        // subjectAlternativeNames: [`ws.${domainName}`],    // placeholder for getting websocket custom domain working
-        hostedZone: this.hostedZone,
-        region,
-        validation: acm.CertificateValidation.fromDns(),
+      this.certificate = new acm.Certificate(this, "certificate", {
+        domainName: domainName,
+        subjectAlternativeNames: [`*.${domainName}`], 
+        validation: acm.CertificateValidation.fromDns(this.hostedZone)
       });
 
     }
 
     // Deploy Step 3, Create Web CF Distro, DNS entry, and S3 BucketDeployment
     const step3 = () => {
-      const cloudFrontOAI = new cloudfront.OriginAccessIdentity(this, 'CloudFrontOriginAccessIdentity', {
-        comment: `${domainName} Domain Hosting Environment`,
-      });
-
+      
       this.cloudFrontDistribution = new cloudfront.Distribution(this, 'CloudFrontDistribution', {
         domainNames: [domainName],
         defaultBehavior: {
-          origin: new origins.S3Origin(dataStores.frontEndBucket, {
-            originAccessIdentity: cloudFrontOAI
-          }),
+          origin: origins.S3BucketOrigin.withOriginAccessControl(dataStores.frontEndBucket),
           compress: true,
           allowedMethods: cloudfront.AllowedMethods.ALLOW_GET_HEAD,
           cachedMethods: cloudfront.CachedMethods.CACHE_GET_HEAD,
