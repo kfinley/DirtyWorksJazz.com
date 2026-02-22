@@ -44,7 +44,7 @@ export class InfrastructureStack extends cdk.Stack {
     const step2 = () => {
       this.certificate = new acm.Certificate(this, "certificate", {
         domainName: domainName,
-        subjectAlternativeNames: [`*.${domainName}`], 
+        // subjectAlternativeNames: [`*.${domainName}`], 
         validation: acm.CertificateValidation.fromDns(this.hostedZone)
       });
 
