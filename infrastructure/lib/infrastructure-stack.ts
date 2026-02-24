@@ -105,7 +105,7 @@ export class InfrastructureStack extends cdk.Stack {
     }
 
     // Run the steps first with step1 then add the others in another push.
-    step1();
+    // step1();
 
     // step2();
     
