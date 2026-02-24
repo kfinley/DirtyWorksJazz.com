@@ -13,7 +13,7 @@ export interface InfraStackProps extends cdk.StackProps {
   node_env: string;
 }
 export class InfrastructureStack extends cdk.Stack {
-  private hostedZone: route53.PublicHostedZone;
+  private hostedZone: route53.IHostedZone;
   private certificate: acm.ICertificateRef;
   private cloudFrontDistribution: cloudfront.Distribution;
 
@@ -31,11 +31,12 @@ export class InfrastructureStack extends cdk.Stack {
       region,
     } = new cdk.ScopedAws(this);
 
+    // How it should be done... Register the domain in Route53 by hand first then look up the hosted zone that got created...
     // Deploy Step 1: Create Hosted Zone
     const step1 = () => {
-      this.hostedZone = new route53.PublicHostedZone(this, 'HostedZone', {
-        zoneName: domainName,
-        comment: `Hosted zone for ${domainName}`
+
+      this.hostedZone = route53.HostedZone.fromLookup(this, 'HostedZoneId', {
+        domainName: domainName
       });
     };
 
@@ -106,7 +107,7 @@ export class InfrastructureStack extends cdk.Stack {
     // Run the steps first with step1 then add the others in another push.
     step1();
 
-    step2();
+    // step2();
     
     // step3();
 
