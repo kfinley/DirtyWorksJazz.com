@@ -41,7 +41,7 @@ import CalendarDateIcon from './icons/IconCalendarDate.vue'
       <CalendarDateIcon month="Feb" day="25" weekday="Wednesday" class="icon" />
     </template>
     <template #heading
-      >Dirty Works Jazz Jam<br/>@ The Lucky Horseshoe <br /><i
+      >Dirty Works Jazz Jam <br class="smart-break"/>@ The Lucky Horseshoe <br /><i
         >Wednesday Feb. 25th, 8 - 11 PM</i
       ></template
     >
@@ -68,7 +68,7 @@ import CalendarDateIcon from './icons/IconCalendarDate.vue'
       <CalendarDateIcon month="Feb" day="27" weekday="Friday" class="icon" />
     </template>
     <template #heading
-      >Dirty Works Acoustic Jam<br/>@ Hop Oast <br /><i>Friday Feb. 27th, 5 - 7 PM</i></template
+      >Dirty Works Acoustic Jam <br  class="smart-break"/>@ Hop Oast <br /><i>Friday Feb. 27th, 5 - 7 PM</i></template
     >
     Acoustic Jazz Jam at
     <a href="https://hopoast.com" target="hopoast">Hop Oast Brewery</a> 2887 Bryant St., SF, CA.<br />
@@ -112,4 +112,12 @@ import CalendarDateIcon from './icons/IconCalendarDate.vue'
     margin-top: 0;
   }
 }
+@media (max-width: 1023px) {
+  @media (orientation: landscape) {
+    .smart-break {
+      display: none;
+    }
+  }
+}
+
 </style>
