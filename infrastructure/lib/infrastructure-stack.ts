@@ -108,7 +108,7 @@ export class InfrastructureStack extends cdk.Stack {
 
     step2();
     
-    // step3();
+    step3();
 
     new cdk.CfnOutput(this, 'DeployURL', {
       value: `https://${domainName}`,
