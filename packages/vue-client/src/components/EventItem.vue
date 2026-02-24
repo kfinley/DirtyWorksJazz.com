@@ -25,7 +25,7 @@
 }
 
 i {
-  display: flex;
+  /* display: flex; */
   place-items: center;
   place-content: center;
   width: 32px;

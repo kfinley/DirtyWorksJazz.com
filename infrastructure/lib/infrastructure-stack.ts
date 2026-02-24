@@ -31,7 +31,8 @@ export class InfrastructureStack extends cdk.Stack {
       region,
     } = new cdk.ScopedAws(this);
 
-    // How it should be done... Register the domain in Route53 by hand first then look up the hosted zone that got created...
+    // If the domain was created with Route53 do a lookup
+    // If it was created with another registrar create a hosted zone
     // Deploy Step 1: Create Hosted Zone
     const step1 = () => {
       this.hostedZone = route53.HostedZone.fromLookup(this, 'HostedZoneId', {

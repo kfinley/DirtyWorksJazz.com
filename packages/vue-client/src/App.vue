@@ -53,6 +53,16 @@ nav a:first-of-type {
   border: 0;
 }
 
+@media (orientation: landscape) {
+  header {
+    line-height: 1.5;
+    max-height: 5vh;
+  }
+  .flyer {
+    visibility: hidden;
+  }
+}
+
 @media (min-width: 1024px) {
   header {
     display: flex;

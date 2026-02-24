@@ -20,20 +20,6 @@ import CalendarDateIcon from './icons/IconCalendarDate.vue'
     <i>Kyle Finley Bass, Tim Caldwell Drums, Keys open</i>
   </EventItem>
 
-   <EventItem>
-    <template #icon>
-      <CalendarDateIcon month="Feb" day="19" weekday="Thursday" class="icon" />
-    </template>
-    <template #heading
-      >Dirty Works Jazz Jam @ Paris 75 <br /><i>Thursday Feb. 19th, 8 - 11 PM</i></template
-    >
-    Open Jazz Jam at <a href="https://lppsf.com" target="paris75">Paris 75</a> 515 Broadway, North Beach SF, CA<br />
-    <i
-      >Kyle Finley Bass, Richard Batelaan Sax & Keys, & Jammers</i
-    >
-  </EventItem>
-  -->
-
   <EventItem>
     <template #icon>
       <CalendarDateIcon month="Feb" day="23" weekday="Monday" class="icon" />
@@ -48,13 +34,14 @@ import CalendarDateIcon from './icons/IconCalendarDate.vue'
       Drums</i
     >
   </EventItem>
+  -->
 
   <EventItem>
     <template #icon>
       <CalendarDateIcon month="Feb" day="25" weekday="Wednesday" class="icon" />
     </template>
     <template #heading
-      >Dirty Works Jazz Jam @ The Lucky Horseshoe <br /><i
+      >Dirty Works Jazz Jam<br/>@ The Lucky Horseshoe <br /><i
         >Wednesday Feb. 25th, 8 - 11 PM</i
       ></template
     >
@@ -66,14 +53,26 @@ import CalendarDateIcon from './icons/IconCalendarDate.vue'
 
   <EventItem>
     <template #icon>
+      <CalendarDateIcon month="Feb" day="26" weekday="Thursday" class="icon" />
+    </template>
+    <template #heading
+      >Dirty Works Jazz Jam @ Paris 75 <br /><i>Thursday Feb. 26th, 8 - 11 PM</i></template
+    >
+    Open Jazz Jam at <a href="https://lppsf.com" target="paris75">Paris 75</a> 515 Broadway, North
+    Beach SF, CA<br />
+    <i>Kyle Finley Bass, Richard Batelaan Sax & Keys, TIm Caldwell Drums</i>
+  </EventItem>
+
+  <EventItem>
+    <template #icon>
       <CalendarDateIcon month="Feb" day="27" weekday="Friday" class="icon" />
     </template>
     <template #heading
-      >Dirty Works Acoustic Jam @ Hop Oast <br /><i>Friday Feb. 27th, 5 - 7 PM</i></template
+      >Dirty Works Acoustic Jam<br/>@ Hop Oast <br /><i>Friday Feb. 27th, 5 - 7 PM</i></template
     >
     Acoustic Jazz Jam at
     <a href="https://hopoast.com" target="hopoast">Hop Oast Brewery</a> 2887 Bryant St., SF, CA.<br />
-    <i>Kyle Finley Bass with jammers</i>
+    <i>Kyle Finley Bass + jammers</i>
   </EventItem>
 
   <EventItem>
@@ -83,7 +82,7 @@ import CalendarDateIcon from './icons/IconCalendarDate.vue'
     <template #heading
       >Dirty Works Jazz Night @ Persona <br /><i>Monday Mar. 2nd, 8 - 1:30 AM</i></template
     >
-    Open Jazz Jam at <a href="https://www.persona-sf.com" target="persona">Persona</a> 685 Sutter
+    Open Jazz Jam at <a href="https://www.persona-sf.com" target="persona">Persona Cocktail Lounge</a> 685 Sutter
     St., SF, CA<br />
     <i
       >Kyle Finley Bass, Jeff Orchard Keys, Richard Batelaan Sax & Keys, & Tim Shae Guitar &
@@ -98,10 +97,9 @@ import CalendarDateIcon from './icons/IconCalendarDate.vue'
     <template #heading
       >Wednesday Jazz Trio @ Paris 75 <br /><i>Wednesday Mar. 4th, 7:30 - 10:30 PM</i></template
     >
-    Jazz at <a href="https://lppsf.com" target="paris75">Paris 75</a> 515 Broadway, North Beach SF, CA<br />
-    <i
-      >Kyle Finley Bass, Chris Guitar, Eden Chaloemtiarana Drums</i
-    >
+    Jazz trio at <a href="https://lppsf.com" target="paris75">Paris 75</a> 515 Broadway, North Beach SF,
+    CA<br />
+    <i>Kyle Finley Bass, Chris Guitar, Eden Chaloemtiarana Drums</i>
   </EventItem>
 </template>
 
