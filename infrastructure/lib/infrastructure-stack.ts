@@ -34,7 +34,6 @@ export class InfrastructureStack extends cdk.Stack {
     // How it should be done... Register the domain in Route53 by hand first then look up the hosted zone that got created...
     // Deploy Step 1: Create Hosted Zone
     const step1 = () => {
-
       this.hostedZone = route53.HostedZone.fromLookup(this, 'HostedZoneId', {
         domainName: domainName
       });
@@ -105,9 +104,9 @@ export class InfrastructureStack extends cdk.Stack {
     }
 
     // Run the steps first with step1 then add the others in another push.
-    // step1();
+    step1();
 
-    // step2();
+    step2();
     
     // step3();
 
