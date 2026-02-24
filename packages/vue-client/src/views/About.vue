@@ -1,14 +1,13 @@
 <template>
   <div class="about justified-hyphenated">
-    <h1 style="text-align: center;">Kyle FInley & The Dirty Works Jazz Band</h1>
+    <h1 style="text-align: center;">Kyle Finley & The Dirty Works Jazz Band</h1>
     <p class="justified-hyphenated">
       Dirty Works Jazz, led by upright bassist
       <a href="https://kylefinley.net" target="kylefinley">Kyle Finley</a>, hosts jazz jams, plays
       gigs, and presents local jazz groups at venues around San Francisco. The group has several
       regular players including
       <a href="https://www.richardbatelaan.com" target="richardbatelaan">Richard Batelaan</a>, Tim
-      Shea, <a href="https://www.jonvenker.com/" target="jonvenker">Jon Venker</a>,
-      <a href="https://jefforchardjazz.com" target="jefforchard">Jeff Orchard</a>, and more local SF
+      Shea, <a href="https://www.jonvenker.com/" target="jonvenker">Jon Venker</a>, <a href="https://jefforchardjazz.com" target="jefforchard">Jeff Orchard</a>, and more local SF
       players.
     </p>
     <p>
@@ -17,7 +16,7 @@
       bar and invites local players to sit in.
     </p>
     <p>
-      The groups repertoire is heavily inspired by the “Golden Era” of jazz (1945–1965), especially
+      The group's repertoire is heavily inspired by the “Golden Era” of jazz (1945–1965), especially
       the catalogs of Riverside, Impulse, and Blue Note records. Expect a hard-driving mix of bebop,
       hard bop, heavy swing, and Latin jazz.
     </p>
@@ -28,7 +27,7 @@
     </p>
     <p>
       Dirty Works Jazz also hosts the only Burlesque & Jazz Jam in San Francisco every 1st Thursday
-      at Paris 75 in the historic North Beach neighborhood. The show features the our favorite
+      at Paris 75 in the historic North Beach neighborhood. The show features our favorite
       burlesque dancer Raya!
     </p>
     <p>For booking information email <a href="mailto:kyle@kylefinley.net">Kyle Finley</a></p>
