@@ -30,13 +30,17 @@ header {
 
 nav {
   width: 100%;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   margin-top: 1rem;
 }
 
-nav a.router-link-exact-active {
+nav a {
   color: var(--color-text);
+}
+
+nav a.router-link-exact-active {
+  color: var(--c-red);
 }
 
 nav a.router-link-exact-active:hover {

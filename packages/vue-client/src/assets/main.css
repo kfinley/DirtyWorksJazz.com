@@ -7,12 +7,10 @@
   font-weight: normal;
 }
 
-a,
-.red {
+a {
   text-decoration: none;
-  color: rgb(173, 16, 8);
+  color: var(--c-red);
   transition: 0.4s;
-  /* padding: 3px; */
   font-weight: bold;
 }
 
