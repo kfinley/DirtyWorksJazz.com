@@ -25,7 +25,7 @@ header {
 .flyer {
   display: block;
   margin: 1rem auto 2rem;
-  width: 336px;
+  width: 90%;
 }
 
 nav {
