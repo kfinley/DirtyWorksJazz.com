@@ -67,13 +67,13 @@ export class InfrastructureStack extends cdk.Stack {
         errorResponses: [
           {
             httpStatus: 403,
-            responsePagePath: '/403', //TODO: create this page...
+            responsePagePath: '/index.html', //TODO: create this page...
             responseHttpStatus: 200,
             ttl: cdk.Duration.minutes(0),
           },
           {
             httpStatus: 404,
-            responsePagePath: '/404', //TODO: create this page...
+            responsePagePath: '/index.html', //TODO: create this page...
             responseHttpStatus: 200,
             ttl: cdk.Duration.minutes(0),
           },
