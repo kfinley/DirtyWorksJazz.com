@@ -26,6 +26,7 @@ header {
   display: block;
   margin: 1rem auto 2rem;
   width: 90%;
+  max-width: 400px;
 }
 
 nav {

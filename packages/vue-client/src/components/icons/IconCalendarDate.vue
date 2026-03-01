@@ -1,18 +1,14 @@
 <script setup lang="ts">
 defineProps<{
-  month: string,
-  day: string,
-  weekday: string,
+  month: string
+  day: string
+  weekday: string
 }>()
-
 </script>
+
 <template>
-  <svg
-    xmlns="http://www.w3.org/2000/svg"
-    aria-label="Calendar"
-    role="img"
-    viewBox="0 0 512 512"
-  >
+  <!-- ht : https://github.com/edent/Dynamic-SVG-Calendar-Icon/tree/master?tab=readme-ov-file -->
+  <svg xmlns="http://www.w3.org/2000/svg" aria-label="Calendar" role="img" viewBox="0 0 512 512">
     <path
       d="M512 455c0 32-25 57-57 57H57c-32 0-57-25-57-57V128c0-31 25-57 57-57h398c32 0 57 26 57 57z"
       fill="#e0e7ec"

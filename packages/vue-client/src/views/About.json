@@ -1,5 +1,5 @@
 {
-  "title": "Kyle Finley & The Dirty Works Jazz Band - San Francisco, CA",
+  "title": "About Kyle Finley & The Dirty Works Jazz Band - SF, CA",
   "allowAnonymous": true,
   "metaTags": [
     {
@@ -16,15 +16,15 @@
     },
     {
       "itemprop": "name",
-      "content": "Kyle Finley & The Dirty Works Jazz Band - San Francisco, CA"
+      "content": "About Kyle Finley & The Dirty Works Jazz Band - SF, CA"
     },
     {
       "property": "og:title",
-      "content": "Kyle Finley & The Dirty Works Jazz Band - San Francisco, CA"
+      "content": "About Kyle Finley & The Dirty Works Jazz Band - SF, CA"
     },
     {
       "property": "og:site_name",
-      "content": "Kyle Finley & The Dirty Works Jazz Band - San Francisco, CA"
+      "content": "About Kyle Finley & The Dirty Works Jazz Band - SF, CA"
     },
     {
       "property": "og:type",
@@ -32,7 +32,7 @@
     },
     {
       "property": "og:url",
-      "content": "https://DirtyWorksJazz.com/"
+      "content": "https://DirtyWorksJazz.com/about"
     },
     {
       "property": "og:image",
