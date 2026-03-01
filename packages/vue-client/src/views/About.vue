@@ -35,9 +35,6 @@
 </template>
 
 <style scoped>
-/* .about > p {
-  text-indent: 20px;
-} */
 p {
   padding-bottom: 1rem;
 }

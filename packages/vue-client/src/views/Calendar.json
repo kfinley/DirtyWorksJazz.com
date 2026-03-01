@@ -1,0 +1,42 @@
+{
+  "title": "Calendar - Kyle Finley & The Dirty Works Jazz Band - SF, CA",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "Full schedule for San Francisco based Kyle Finley & The Dirty Works Jazz Band. Weekly jazz jams and gigs in SF."
+    },
+    {
+      "itemprop": "description",
+      "content": "Full schedule for San Francisco based Kyle Finley & The Dirty Works Jazz Band. Weekly jazz jams and gigs in SF."
+    },
+    {
+      "property": "og:description",
+      "content": "Full schedule for San Francisco based Kyle Finley & The Dirty Works Jazz Band. Weekly jazz jams and gigs in SF."
+    },
+    {
+      "itemprop": "name",
+      "content": "Calendar - Kyle Finley & The Dirty Works Jazz Band - SF, CA"
+    },
+    {
+      "property": "og:title",
+      "content": "Calendar - Kyle Finley & The Dirty Works Jazz Band - SF, CA"
+    },
+    {
+      "property": "og:site_name",
+      "content": "Calendar - Kyle Finley & The Dirty Works Jazz Band - SF, CA"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://DirtyWorksJazz.com/calendar"
+    },
+    {
+      "property": "og:image",
+      "content": "https://dirtyworksjazz.com/assets/dirty-works-jazz.jpg"
+    }
+  ]
+}

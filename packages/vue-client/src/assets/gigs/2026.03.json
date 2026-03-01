@@ -44,8 +44,8 @@
     },
     {
       "date": "3/12/2026",
-      "name": "Dirty Works Jam hosted by Richard Batelaan",
-      "description": "Open jazz jam hosted by Richard Batelaan.",
+      "name": "Dirty Works Jam @ Paris 75",
+      "description": "Open jazz jam hosted by Richard Batelaan at <a href=\"https://lppsf.com\" target=\"paris75\">Paris 75</a> 515 Broadway, North Beach SF, CA",
       "players": "Richard Batelaan Keys & Sax, ???",
       "location": "<a href=\"https://lppsf.com\" target=\"paris75\">Paris 75</a> SF, CA",
       "time": "8 - 11 PM"
@@ -53,16 +53,16 @@
 
     {
       "date": "3/13/2026",
-      "name": "Dirty Works Acoustic Jazz Jam",
-      "description": "",
+      "name": "Dirty Works Acoustic Jam @ Hop Oast",
+      "description": "Acoustic jazz jam at <a href=\"https://hopoast.com\" target=\"hopoast\">Hop Oast</a> 2887 Bryant St, SF, CA",
       "players": "Kyle Finley Bass plus jammers",
-      "location": "<a href=\"https://hopoast.com\" target=\"new\">Hop Oast</a><br/>Bernal Heights - SF, CA",
+      "location": "<a href=\"https://hopoast.com\" target=\"hopoast\">Hop Oast</a><br/>Bernal Heights - SF, CA",
       "time": "5 - 7 PM"
     },
 
     {
       "date": "3/16/2026",
-      "name": "Dirty Works Jazz Night<br/>& Jam Session",
+      "name": "Dirty Works Jazz Night @ Persona",
       "description": "Open Jazz Jam at <a href=\"https://www.persona-sf.com\" target=\"persona\">Persona Cocktail Lounge</a> 685 Sutter St., SF, CA",
       "players": "Kyle Finley Bass, Jeff Orchard Keys, Richard Batelaan Sax & Keys, & Tim Shea Guitar & Drums",
       "location": "<a href=\"https://www.persona-sf.com\" target=\"new\">Persona</a> SF, CA",
@@ -70,7 +70,7 @@
     },
     {
       "date": "3/18/2026",
-      "name": "Dirty Works Jazz Jam",
+      "name": "Dirty Works Jam @ The Shoe",
       "description": "Open Jazz Jam at <a href=\"https://www.theluckyhorseshoebar.com\" target=\"theshoe\">The Lucky Horseshoe</a> 453 Cortland Ave in Bernal Heights, SF, CA.",
       "players": "Kyle Finley Bass, Tim Caldwell Drums, keys open",
       "location": "<a href=\"https://www.theluckyhorseshoebar.com/\" target=\"Shoe\">The Lucky Horseshoe</a><br/>Bernal Heights - SF, CA",
@@ -78,29 +78,33 @@
     },
     {
       "date": "3/19/2026",
-      "name": "Dirty Works & Friends<br/>Open Jazz Jam ",
+      "name": "Dirty Works Jam @ Paris 75",
+      "description": "Open jazz jam at <a href=\"https://lppsf.com\" target=\"paris75\">Paris 75</a> 515 Broadway, North Beach SF, CA",
+      "players": "Kyle Finley Bass, Richard Batelaan Keys & Sax, Tim Caldwell Drums",
       "location": "<a href=\"https://lppsf.com\" target=\"paris75\">Paris 75</a> SF, CA",
       "time": "8 - 11 PM"
     },
-
     {
       "date": "3/23/2026",
-      "name": "Dirty Works Jazz Night<br/>& Jam Session",
+      "name": "Dirty Works Jazz Night @ Persona",
       "description": "Open Jazz Jam at <a href=\"https://www.persona-sf.com\" target=\"persona\">Persona Cocktail Lounge</a> 685 Sutter St., SF, CA",
       "players": "Kyle Finley Bass, Jeff Orchard Keys, Richard Batelaan Sax & Keys, & Tim Shea Guitar & Drums",
       "location": "<a href=\"https://www.persona-sf.com\" target=\"new\">Persona</a> SF, CA",
       "time": "8 - 1:30 AM"
     },
-
     {
       "date": "3/25/2026",
-      "name": "Dirty Works Jazz Jam",
+      "name": "Dirty Works Jam @ The Shoe",
+      "description": "Open Jazz Jam at <a href=\"https://www.theluckyhorseshoebar.com\" target=\"theshoe\">The Lucky Horseshoe</a> 453 Cortland Ave in Bernal Heights, SF, CA.",
+      "players": "Kyle Finley Bass, Tim Caldwell Drums, keys open",
       "location": "<a href=\"https://www.theluckyhorseshoebar.com/\" target=\"Shoe\">The Lucky Horseshoe</a><br/>Bernal Heights - SF, CA",
       "time": "8 - 11 PM"
     },
     {
       "date": "3/27/2026",
-      "name": "Dirty Works Acoustic Jazz Jam",
+      "name": "Dirty Works Acoustic Jam @ Hop Oast",
+      "description": "Acoustic jazz jam at <a href=\"https://hopoast.com\" target=\"hopoast\">Hop Oast</a> 2887 Bryant St, SF, CA",
+      "players": "Kyle Finley Bass plus jammers",
       "location": "<a href=\"https://hopoast.com\" target=\"new\">Hop Oast</a><br/>Bernal Heights - SF, CA",
       "time": "5 - 7 PM"
     },

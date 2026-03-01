@@ -1,16 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/Home.vue'
 import { RouteNames } from './route-names'
+import type MetaData from '@/types/meta-data'
 
 const viewsMeta = import.meta.glob('../views/*.json')
-
-interface MetaData {
-  title: string;
-  allowAnonymous: boolean;
-  metaTags: [
-    any
-  ]
-}
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -28,7 +21,15 @@ const router = createRouter({
       // this generates a separate chunk (About.[hash].js) for this route
       // which is lazy-loaded when the route is visited.
       component: () => import('../views/About.vue'),
+      meta: viewsMeta[`../views/About.json`] ? (await viewsMeta[`../views/About.json`]() as any).default : { allowAnonymous: true }
     },
+    {
+      path: '/calendar',
+      name: RouteNames.Calendar,
+      component: () => import('../views/Calendar.vue'),
+      meta: viewsMeta[`../views/Calendar.json`] ? (await viewsMeta[`../views/Calendar.json`]() as any).default : { allowAnonymous: true }
+      
+    }
   ],
 })
 

@@ -5,7 +5,7 @@
       {{ ((month = date.toLocaleString('en-US', { month: 'short' })), null) }}
       {{ ((day = date.toLocaleString('en-US', { day: 'numeric' }).toString()), null) }}
       {{ ((weekday = date.toLocaleString('en-US', { weekday: 'long' })), null) }}
-      <CalendarDateIcon :month="month" :day="day" :weekday="weekday" class="icon" />
+      <CalendarDateIcon :month :day :weekday class="icon" />
     </template>
     <template #heading>
       <span v-html="event.name"></span><br />
@@ -14,6 +14,9 @@
     <span v-html="event.description"></span><br />
     <i>{{ event.players }}</i>
   </EventItem>
+  <h2 style="text-align: center !important;">
+  <router-link to="/calendar">View Full Schedule</router-link>
+  </h2>
 </template>
 
 <script setup lang="ts">
