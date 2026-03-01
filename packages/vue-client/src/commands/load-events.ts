@@ -32,18 +32,20 @@ export class LoadEventsCommand implements Command<{}, {}> {
             };
         });
 
-        await import(`@/assets/gigs/${this.followingYear}.${this.followingMonth}.json`).then(val => {
+        try {
+            await import(`@/assets/gigs/${this.followingYear}.${this.followingMonth}.json`).then(val => {
 
-            this.store.$state.nextMonth = {
-                name: (<MonthlyGigs>val.default).month,
-                events: (<MonthlyGigs>val.default).gigs
-            }
-        });
+                this.store.$state.nextMonth = {
+                    name: (<MonthlyGigs>val.default).month,
+                    events: (<MonthlyGigs>val.default).gigs
+                }
+            });
+        } catch (e) { /* file isn't there */ }
     }
 
     async #loadUpcomingEvents() {
         this.today.setHours(0, 0, 0, 0)
-        
+
         this.store.$state.upcomingEvents = this.store.$state.thisMonth
             .events
             .filter((i) => new Date(i.date) >= this.today)
