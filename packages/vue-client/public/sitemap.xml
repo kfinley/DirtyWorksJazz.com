@@ -1,11 +1,35 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://DirtyWorksJazz.com/</loc>
-    <lastmod>2026-02-13</lastmod>
+    <loc>https://DirtyWorksJazz.com/about</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://DirtyWorksJazz.com/burlesque-jazz-jam</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://DirtyWorksJazz.com/calendar</loc>
+    <lastmod>2026-03-01</lastmod>
   </url>
   <url>
     <loc>https://DirtyWorksJazz.com/</loc>
-    <lastmod>2026-02-13</lastmod>
+    <lastmod>2026-03-01</lastmod>
+  </url>
+  <url>
+    <loc>https://DirtyWorksJazz.com/hop-oast-acoustic-jazz-jam</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://DirtyWorksJazz.com/paris-75-jazz-jam</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://DirtyWorksJazz.com/persona-jazz-jam</loc>
+    <lastmod>2026-03-08</lastmod>
+  </url>
+  <url>
+    <loc>https://DirtyWorksJazz.com/lucky-horseshoe-jazz-jam</loc>
+    <lastmod>2026-03-08</lastmod>
   </url>
 </urlset>

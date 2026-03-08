@@ -5,7 +5,7 @@
     </div>
     <p>
       Every Monday night <a href="https://kylefinley.net" target="new">Kyle Finley</a> hosts a jazz
-      night and open jam session with the Dirty Works Jazz Band from 8 to 1:30AM at
+      night and open jam session with the Dirty Works Jazz Band from 8 to 1:30 AM at
       <a href="https://persona-sf.com" target="new">Persona</a> located at 685 Sutter St. in San
       Francisco's Nob Hill neighborhood.
     </p>

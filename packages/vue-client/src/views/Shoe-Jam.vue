@@ -8,7 +8,7 @@
       <a href="https://kylefinley.net" target="new">Kyle Finley</a> running the Dirty Works Jazz Jam
       at <a href="https://www.theluckyhorseshoebar.com" target="new">The Lucky Horseshoe</a> at 453
       Cortland Ave. in San Francisco's Bernal Heights neighborhood. This is an open jam from 8 to
-      11PM every 2nd through 5th Wednesdays of the month.
+      11 PM every 2nd through 5th Wednesdays of the month.
     </p>
     <p>
       "The Shoe" (as it's known by the locals) has a long history of live music. Before becoming the
