@@ -1,0 +1,42 @@
+{
+  "title": "Persona Jazz Night hosted by Kyle Finley & Dirty Works Jazz - SF, CA",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "Monday Jazz Night @ Persona Cocktail Social Club Nob Hill San Francisco, CA. Jam Session Hosted by Bassist Kyle Finley & The Dirty Works Jazz Band."
+    },
+    {
+      "itemprop": "description",
+      "content": "Monday Jazz Night @ Persona Cocktail Social Club Nob Hill San Francisco, CA. Jam Session Hosted by Bassist Kyle Finley & The Dirty Works Jazz Band."
+    },
+    {
+      "property": "og:description",
+      "content": "Monday Jazz Night @ Persona Cocktail Social Club Nob Hill San Francisco, CA. Jam Session Hosted by Bassist Kyle Finley & The Dirty Works Jazz Band."
+    },
+    {
+      "itemprop": "name",
+      "content": "Persona Jazz Night hosted by Kyle Finley & Dirty Works Jazz - SF, CA"
+    },
+    {
+      "property": "og:title",
+      "content": "Persona Jazz Night hosted by Kyle Finley & Dirty Works Jazz - SF, CA"
+    },
+    {
+      "property": "og:site_name",
+      "content": "Persona Jazz Night hosted by Kyle Finley & Dirty Works Jazz - SF, CA"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://DirtyWorksJazz.com/persona-jazz-jam"
+    },
+    {
+      "property": "og:image",
+      "content": "https://dirtyworksjazz.com/assets/dirty-works-jazz.jpg"
+    }
+  ]
+}

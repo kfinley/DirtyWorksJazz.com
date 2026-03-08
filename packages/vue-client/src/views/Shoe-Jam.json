@@ -1,0 +1,42 @@
+{
+  "title": "Shoe Jazz Jam hosted by Kyle Finley & Dirty Works Jazz - SF, CA",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "Open Jazz Jam @ The Lucky Horseshoe Bernal Heights San Francisco, CA. Hosted by bassist Kyle Finley & The Dirty Works Jazz Band. 2nd, 3rd, 4th, & 5th Wednesdays"
+    },
+    {
+      "itemprop": "description",
+      "content": "Open Jazz Jam @ The Lucky Horseshoe Bernal Heights San Francisco, CA. Hosted by bassist Kyle Finley & The Dirty Works Jazz Band. 2nd, 3rd, 4th, & 5th Wednesdays"
+    },
+    {
+      "property": "og:description",
+      "content": "Open Jazz Jam @ The Lucky Horseshoe Bernal Heights San Francisco, CA. Hosted by bassist Kyle Finley & The Dirty Works Jazz Band. 2nd, 3rd, 4th, & 5th Wednesdays"
+    },
+    {
+      "itemprop": "name",
+      "content": "Shoe Jazz Jam hosted by Kyle Finley & Dirty Works Jazz - SF, CA"
+    },
+    {
+      "property": "og:title",
+      "content": "Shoe Jazz Jam hosted by Kyle Finley & Dirty Works Jazz - SF, CA"
+    },
+    {
+      "property": "og:site_name",
+      "content": "Shoe Jazz Jam hosted by Kyle Finley & Dirty Works Jazz - SF, CA"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://DirtyWorksJazz.com/lucky-horseshoe-jazz-jam"
+    },
+    {
+      "property": "og:image",
+      "content": "https://dirtyworksjazz.com/assets/dirty-works-jazz.jpg"
+    }
+  ]
+}

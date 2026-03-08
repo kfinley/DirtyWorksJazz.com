@@ -3,7 +3,7 @@
 #app {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 0rem 2rem 2rem;
+  padding: 0rem 1.25rem 1.25rem;
   font-weight: normal;
 }
 
@@ -12,6 +12,11 @@ a {
   color: var(--c-red);
   transition: 0.4s;
   font-weight: bold;
+}
+
+p {
+  padding-top: 10px;
+  padding-bottom: 1rem;
 }
 
 .justified-hyphenated {
@@ -42,6 +47,10 @@ a {
   hyphenate-limit-lies: 2;
   hyphenate-limit-last: always;
   hyphenate-limit-zone: 8%;
+}
+
+.text-center {
+  text-align: center !important;
 }
 
 @media (hover: hover) {

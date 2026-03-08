@@ -1,0 +1,42 @@
+{
+  "title": "Burlesque Jazz Jam hosted by Kyle Finley & Dirty Works Jazz - SF, CA",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "San Francisco's only Burlesque Jazz Jam hosted by Bassist Kyle Finley & The Dirty Works Jazz Band @ Paris 75 in historic North Beach every 1st Thursday."
+    },
+    {
+      "itemprop": "description",
+      "content": "San Francisco's only Burlesque Jazz Jam hosted by Bassist Kyle Finley & The Dirty Works Jazz Band @ Paris 75 in historic North Beach every 1st Thursday."
+    },
+    {
+      "property": "og:description",
+      "content": "San Francisco's only Burlesque Jazz Jam hosted by Bassist Kyle Finley & The Dirty Works Jazz Band @ Paris 75 in historic North Beach every 1st Thursday."
+    },
+    {
+      "itemprop": "name",
+      "content": "Burlesque Jazz Jam hosted by Kyle Finley & Dirty Works Jazz - SF, CA"
+    },
+    {
+      "property": "og:title",
+      "content": "Burlesque Jazz Jam hosted by Kyle Finley & Dirty Works Jazz - SF, CA"
+    },
+    {
+      "property": "og:site_name",
+      "content": "Burlesque Jazz Jam hosted by Kyle Finley & Dirty Works Jazz - SF, CA"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://DirtyWorksJazz.com/burlesque-jazz-jam"
+    },
+    {
+      "property": "og:image",
+      "content": "https://dirtyworksjazz.com/assets/dirty-works-jazz.jpg"
+    }
+  ]
+}

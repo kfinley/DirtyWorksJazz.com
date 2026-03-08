@@ -1,0 +1,42 @@
+{
+  "title": "Thursday Night Jazz in North Beach hosted by Kyle Finley & Dirty Works Jazz - SF, CA",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "Open Jazz Jam on Thursday Nights @ Paris 75 in North Beach San Francisco, CA. Jam Session Hosted by Bassist Kyle Finley & The Dirty Works Jazz Band."
+    },
+    {
+      "itemprop": "description",
+      "content": "Open Jazz Jam on Thursday Nights @ Paris 75 in North Beach San Francisco, CA. Jam Session Hosted by Bassist Kyle Finley & The Dirty Works Jazz Band."
+    },
+    {
+      "property": "og:description",
+      "content": "Open Jazz Jam on Thursday Nights @ Paris 75 in North Beach San Francisco, CA. Jam Session Hosted by Bassist Kyle Finley & The Dirty Works Jazz Band."
+    },
+    {
+      "itemprop": "name",
+      "content": "Thursday Night Open Jazz in North Beach hosted by Kyle Finley & Dirty Works Jazz - SF, CA"
+    },
+    {
+      "property": "og:title",
+      "content": "Thursday Night Open Jazz in North Beach hosted by Kyle Finley & Dirty Works Jazz - SF, CA"
+    },
+    {
+      "property": "og:site_name",
+      "content": "Thursday Night Open Jazz in North Beach hosted by Kyle Finley & Dirty Works Jazz - SF, CA"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://DirtyWorksJazz.com/paris-75-jazz-jam"
+    },
+    {
+      "property": "og:image",
+      "content": "https://dirtyworksjazz.com/assets/dirty-works-jazz.jpg"
+    }
+  ]
+}

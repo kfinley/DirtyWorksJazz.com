@@ -31,7 +31,36 @@ const router = createRouter({
       name: RouteNames.Calendar,
       component: () => import('../views/Calendar.vue'),
       meta: viewsMeta[`../views/Calendar.json`] ? (await viewsMeta[`../views/Calendar.json`]() as any).default : { allowAnonymous: true }
-      
+    },
+    {
+      path: '/lucky-horseshoe-jazz-jam',
+      name: RouteNames.ShoeJam,
+      component: () => import('../views/Shoe-Jam.vue'),
+      meta: viewsMeta[`../views/Shoe-Jam.json`] ? (await viewsMeta[`../views/Shoe-Jam.json`]() as any).default : { allowAnonymous: true }
+    },
+    {
+      path: '/persona-jazz-jam',
+      name: RouteNames.PersonaJam,
+      component: () => import('../views/Persona-Jam.vue'),
+      meta: viewsMeta[`../views/Persona-Jam.json`] ? (await viewsMeta[`../views/Persona-Jam.json`]() as any).default : { allowAnonymous: true }
+    },
+    {
+      path: '/paris-75-jazz-jam',
+      name: RouteNames.ParisJam,
+      component: () => import('../views/Paris-Jam.vue'),
+      meta: viewsMeta[`../views/Paris-Jam.json`] ? (await viewsMeta[`../views/Paris-Jam.json`]() as any).default : { allowAnonymous: true }
+    },
+    {
+      path: '/burlesque-jazz-jam',
+      name: RouteNames.BurlesqueJam,
+      component: () => import('../views/Burlesque-Jam.vue'),
+      meta: viewsMeta[`../views/Burlesque-Jam.json`] ? (await viewsMeta[`../views/Burlesque-Jam.json`]() as any).default : { allowAnonymous: true }
+    },
+    {
+      path: '/hop-oast-acoustic-jazz-jam',
+      name: RouteNames.HopOastJam,
+      component: () => import('../views/Hop-Oast-Jam.vue'),
+      meta: viewsMeta[`../views/Hop-Oast-Jam.json`] ? (await viewsMeta[`../views/Hop-Oast-Jam.json`]() as any).default : { allowAnonymous: true }
     }
   ],
 })
@@ -51,9 +80,8 @@ const getMetaData = async (route: string): Promise<MetaData> => {
 }
 
 // This callback runs before every route change, including on page load.
-router.beforeEach((to, from, next) => {
+router.beforeEach((to, from) => {
   try {
-
     // Get meta info for the route
     getMetaData(to.name as string).then((meta) => {
       document.title = meta.title
@@ -77,11 +105,9 @@ router.beforeEach((to, from, next) => {
         }
 
       });
-      next();
     });
   } catch (e) {
     console.log(e);
-    next();
   }
 });
 

@@ -1,5 +1,5 @@
 <template>
-  <div class="about justified-hyphenated">
+  <main class="about justified-hyphenated">
     <h1 style="text-align: center;">Kyle Finley & The Dirty Works Jazz Band</h1>
     <p class="justified-hyphenated">
       Dirty Works Jazz, led by upright bassist
@@ -31,13 +31,10 @@
       burlesque dancer Raya!
     </p>
     <p>For booking information email <a href="mailto:kyle@kylefinley.net">Kyle Finley</a></p>
-  </div>
+  </main>
 </template>
 
 <style scoped>
-p {
-  padding-bottom: 1rem;
-}
 @media (min-width: 1024px) {
   .about {
     margin-top: 2rem;

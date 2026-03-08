@@ -1,13 +1,10 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-</script>
-
 <template>
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink to="/about">Dirty Works Jazz</RouterLink>
-        <RouterLink to="/">Upcoming Gigs</RouterLink>
+        <RouterLink :to='{ name: RouteNames.About }'>Dirty Works Jazz</RouterLink>
+        <RouterLink :to='{ name: RouteNames.Home }'>Upcoming Shows</RouterLink>
+        <JamsMenu></JamsMenu>
       </nav>
       <img alt="Dirty Works Jazz" class="flyer" src="@/assets/dirty-works-jazz.jpg" />
     </div>
@@ -15,6 +12,12 @@ import { RouterLink, RouterView } from 'vue-router'
 
   <RouterView />
 </template>
+
+<script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
+import JamsMenu from '@/components/JamsMenu.vue'
+import { RouteNames } from '@/router/route-names'
+</script>
 
 <style scoped>
 header {
@@ -50,7 +53,7 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
-  padding: 0 1rem;
+  padding: 0 .5rem;
   border-left: 1px solid var(--color-border);
 }
 
@@ -92,7 +95,6 @@ nav a:first-of-type {
     text-align: left;
     margin-left: -1rem;
     font-size: 1rem;
-
     padding: 1rem 0;
     margin-top: 4rem;
   }

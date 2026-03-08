@@ -1,0 +1,42 @@
+{
+  "title": "Dirty Works Acoustic Jazz Jam hosted by Kyle Finley - SF, CA",
+  "allowAnonymous": true,
+  "metaTags": [
+    {
+      "name": "description",
+      "content": "Acoustic Jazz Jam on Friday Afternoons hosted by Kyle Finley @ Hop Oast Pub & Brewery San Francisco, CA."
+    },
+    {
+      "itemprop": "description",
+      "content": "Acoustic Jazz Jam on Friday Afternoons hosted by Kyle Finley @ Hop Oast Pub & Brewery San Francisco, CA."
+    },
+    {
+      "property": "og:description",
+      "content": "Acoustic Jazz Jam on Friday Afternoons hosted by Kyle Finley @ Hop Oast Pub & Brewery San Francisco, CA."
+    },
+    {
+      "itemprop": "name",
+      "content": "Dirty Works Acoustic Jazz Jam @ Hop Oast hosted by Kyle Finley - SF, CA"
+    },
+    {
+      "property": "og:title",
+      "content": "Dirty Works Acoustic Jazz Jam @ Hop Oast hosted by Kyle Finley - SF, CA"
+    },
+    {
+      "property": "og:site_name",
+      "content": "Dirty Works Acoustic Jazz Jam @ Hop Oast hosted by Kyle Finley - SF, CA"
+    },
+    {
+      "property": "og:type",
+      "content": "Website"
+    },
+    {
+      "property": "og:url",
+      "content": "https://DirtyWorksJazz.com/hop-oast-acoustic-jazz-jam"
+    },
+    {
+      "property": "og:image",
+      "content": "https://dirtyworksjazz.com/assets/dirty-works-jazz.jpg"
+    }
+  ]
+}
