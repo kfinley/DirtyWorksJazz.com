@@ -19,9 +19,6 @@
             :class="{
               'dropdown-menu-inner': true,
               [dropdownMenuClass]: dropdownMenuClass,
-              // 'h-100': true,
-              // 'w-100': true,
-              // 'bg-white': true,
               'position-relative': true,
             }"
             style="z-index: 2000"
@@ -42,20 +39,9 @@ import { computePosition, flip, shift, offset, autoUpdate, arrow } from '@floati
 export default {
   name: 'Dropdown',
   props: {
-    // Customization props for the dropdown button
-    variant: { type: String, default: 'secondary' }, // Button color variant
-    size: { type: String, default: 'md' }, // Button size
-    outline: { type: Boolean, default: false }, // Whether the button is outlined
-    label: { type: String, default: 'Dropdown' }, // Button label
     placement: { type: String, default: 'bottom' }, // Dropdown placement relative to the button
     alignment: { type: String, default: 'center' }, // Dropdown alignment (left, center, right)
     dropdownMenuClass: { type: String, default: '' }, // Custom CSS class for the dropdown menu
-    btnStyle: { type: [Object, String] }, // Custom CSS styles for the button
-    btnClass: { type: [String, Object, Array], default: '' }, // Custom CSS classes for the button
-    // ghosted: { type: Boolean, default: false },
-    // flat: { type: Boolean, default: false },
-    // buttonId: { type: String, default: "" },
-    tooltipMessage: { type: String, default: '' },
     offset: { type: Number, default: 18 }, // Offset of the dropdown from the button
   },
 
@@ -165,7 +151,8 @@ export default {
 
       if (
         event.target.classList.contains('dropdown-item') ||
-        event.target.parentElement.classList.contains('dropdown-item')
+        event.target.parentElement.classList.contains('dropdown-item') ||
+        event.target.parentElement.parentElement.classList.contains('dropdown-items')
       ) {
         this.isOpen = false
       }

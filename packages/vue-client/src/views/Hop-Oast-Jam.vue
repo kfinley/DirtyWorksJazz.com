@@ -7,7 +7,7 @@
       A few times a month bassist
       <a href="https://kylefinley.net" target="kyle">Kyle Finley</a> hosts the Dirty Works Acoustic
       Jazz Jam at <a href="https://hopoast.com" target="hopoast">Hop Oast Pub & Brewery</a>, 2887
-      Bryant St., on Friday afternoons from 5 till 7:30 PM.
+      Bryant St., on Friday afternoons from 5 to 7:30 PM.
     </p>
     <p>
       This is a unique jam because there are no amps and also no drums. The jam is played purely
