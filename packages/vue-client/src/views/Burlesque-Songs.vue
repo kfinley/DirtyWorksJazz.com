@@ -21,11 +21,10 @@
       <li>Dream a Little Dream of Me</li>
       <li>Fever</li>
       <li>Fly Me To The Moon</li>
-      <li>Girl From Impanema</li>
+      <li>Girl From Ipanema</li>
       <li>Have You Met Miss Jones</li>
       <li>Honeysuckle Rose</li>
       <li>How Deep is the Ocean</li>
-      <li>How High The Moon</li>
       <li>How High The Moon</li>
       <li>How Insensitive</li>
       <li>I Love You</li>
