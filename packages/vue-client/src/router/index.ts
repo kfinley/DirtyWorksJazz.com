@@ -57,6 +57,12 @@ const router = createRouter({
       meta: viewsMeta[`../views/Burlesque-Jam.json`] ? (await viewsMeta[`../views/Burlesque-Jam.json`]() as any).default : { allowAnonymous: true }
     },
     {
+      path: '/burlesque-jazz-songs',
+      name: RouteNames.BurlesqueSongs,
+      component: () => import('../views/Burlesque-Songs.vue'),
+      //meta: viewsMeta[`../views/Burlesque-Jam.json`] ? (await viewsMeta[`../views/Burlesque-Jam.json`]() as any).default : { allowAnonymous: true }
+    },
+    {
       path: '/hop-oast-acoustic-jazz-jam',
       name: RouteNames.HopOastJam,
       component: () => import('../views/Hop-Oast-Jam.vue'),

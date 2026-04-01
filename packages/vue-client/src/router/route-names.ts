@@ -8,6 +8,7 @@ export enum RouteNames {
     ShoeJam = "ShoeJam",
     PersonaJam = "PersonaJam",
     BurlesqueJam = "BurlesqueJam",
+    BurlesqueSongs = "BurlesqueSongs",
     ParisJam = "ParisJam",
     HopOastJam = "HopOastJam"
 };
