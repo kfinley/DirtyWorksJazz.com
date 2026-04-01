@@ -6,7 +6,8 @@
         <RouterLink :to='{ name: RouteNames.Home }'>Upcoming Shows</RouterLink>
         <JamsMenu></JamsMenu>
       </nav>
-      <img alt="Dirty Works Jazz" class="flyer" src="@/assets/dirty-works-jazz.jpg" />
+      
+      <img v-if=application.showHero alt="Dirty Works Jazz" class="flyer" src="@/assets/dirty-works-jazz.jpg" />
     </div>
   </header>
 
@@ -17,6 +18,10 @@
 import { RouterLink, RouterView } from 'vue-router'
 import JamsMenu from '@/components/JamsMenu.vue'
 import { RouteNames } from '@/router/route-names'
+import { useApplicationStore } from '@/stores/application'
+
+const application = useApplicationStore()
+
 </script>
 
 <style scoped>
