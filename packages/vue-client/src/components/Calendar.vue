@@ -16,6 +16,9 @@
         <tr>
           <td v-html="event.name"></td>
         </tr>
+        <tr v-if="event.featuring">
+          <td>Featuring {{ event.featuring }}</td>
+        </tr>
         <tr>
           <td v-html=event.location></td>
         </tr>

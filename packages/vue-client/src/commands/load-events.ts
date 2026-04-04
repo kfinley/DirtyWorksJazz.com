@@ -63,8 +63,6 @@ export class LoadEventsCommand implements Command<{}, {}> {
     compareDates(a: Event, b: Event): number {
         if (!a.date) return 1; // null dates come last
         if (!b.date) return -1;
-        // return a.date.getTime() - b.date.getTime();
         return new Date(a.date).getTime() - new Date(b.date).getTime();
-        // return Date.parse(b.date) - Date.parse(a.date);
     }
 }
