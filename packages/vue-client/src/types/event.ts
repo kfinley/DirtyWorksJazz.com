@@ -5,5 +5,6 @@ export default interface Event {
     players: string;
     featuring: string | null;
     location: string;
+    ticketUrl: string | null;
     time: string;
 }

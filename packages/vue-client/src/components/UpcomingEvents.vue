@@ -8,10 +8,14 @@
       <CalendarDateIcon :month :day :weekday class="icon" />
     </template>
     <template #heading>
-      <span v-html="event.name"></span><br />
+      <a v-if="event.ticketUrl" :href="event.ticketUrl" target="tickets">
+        <span v-html="event.name"></span>
+      </a>
+      <span v-else v-html="event.name"></span><br />
       <i>{{ weekday }}, {{ month }}. {{ numberOrdinal(day) }}, {{ event.time }}</i>
     </template>
     <span v-html="event.description"></span><br />
+    <span v-if="event.featuring != null">Featuring burlesque dancer {{ event.featuring }}<br /></span>
     <i>{{ event.players }}</i>
   </EventItem>
   <h2 style="text-align: center !important;">

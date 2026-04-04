@@ -2,25 +2,38 @@
   <div class="schedule">
     <h3>Full Schedule</h3>
     <h2>{{ events.thisMonth.name }}</h2>
-    <table  v-for="(event, index) in events.thisMonth.events" :key="index">
-      {{ ((date = new Date(event.date)), null) }}
-      {{ ((month = date.toLocaleString('en-US', { month: 'numeric' })), null) }}
-      {{ ((day = date.toLocaleString('en-US', { day: 'numeric' }).toString()), null) }}
-      {{ ((weekday = date.toLocaleString('en-US', { weekday: 'short' })), null) }}
+    <table v-for="(event, index) in events.thisMonth.events" :key="index">
+      {{
+        ((date = new Date(event.date)), null)
+      }}
+      {{
+        ((month = date.toLocaleString('en-US', { month: 'numeric' })), null)
+      }}
+      {{
+        ((day = date.toLocaleString('en-US', { day: 'numeric' }).toString()), null)
+      }}
+      {{
+        ((weekday = date.toLocaleString('en-US', { weekday: 'short' })), null)
+      }}
       <thead>
         <tr>
-          <th>{{ weekday }} {{month}}/{{day}}</th>
+          <th>{{ weekday }} {{ month }}/{{ day }}</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td v-html="event.name"></td>
+          <td>
+            <a v-if="event.ticketUrl" :href="event.ticketUrl" target="tickets">
+              {{ event.name }}
+            </a>
+            <span v-else v-html="event.name"></span>
+          </td>
         </tr>
         <tr v-if="event.featuring">
           <td>Featuring {{ event.featuring }}</td>
         </tr>
         <tr>
-          <td v-html=event.location></td>
+          <td v-html="event.location"></td>
         </tr>
         <tr>
           <td>{{ event.time }}</td>
@@ -28,22 +41,30 @@
       </tbody>
     </table>
     <h2>{{ events.nextMonth.name }}</h2>
-    <table  v-for="(event, index) in events.nextMonth.events" :key="index">
-      {{ ((date = new Date(event.date)), null) }}
-      {{ ((month = date.toLocaleString('en-US', { month: 'numeric' })), null) }}
-      {{ ((day = date.toLocaleString('en-US', { day: 'numeric' }).toString()), null) }}
-      {{ ((weekday = date.toLocaleString('en-US', { weekday: 'short' })), null) }}
+    <table v-for="(event, index) in events.nextMonth.events" :key="index">
+      {{
+        ((date = new Date(event.date)), null)
+      }}
+      {{
+        ((month = date.toLocaleString('en-US', { month: 'numeric' })), null)
+      }}
+      {{
+        ((day = date.toLocaleString('en-US', { day: 'numeric' }).toString()), null)
+      }}
+      {{
+        ((weekday = date.toLocaleString('en-US', { weekday: 'short' })), null)
+      }}
       <thead>
         <tr>
-          <th>{{ weekday }} {{month}}/{{day}}</th>
+          <th>{{ weekday }} {{ month }}/{{ day }}</th>
         </tr>
       </thead>
       <tbody>
         <tr>
-          <td v-html=event.name></td>
+          <td v-html="event.name"></td>
         </tr>
         <tr>
-          <td v-html=event.location></td>
+          <td v-html="event.location"></td>
         </tr>
         <tr>
           <td>{{ event.time }}</td>
@@ -60,11 +81,9 @@ const events = useEventsStore()
 </script>
 
 <style>
-
 .schedule {
   text-align: center !important;
 }
-
 
 table {
   min-width: 250px;
@@ -98,5 +117,4 @@ td {
     }
   }
 }
-
 </style>
