@@ -1,7 +1,7 @@
 import { useEventsStore } from "@/stores/events";
 import type { Command } from "@/types/command";
 import type MonthlyGigs from "@/types/monthly-gigs";
-
+import type Event from "@/types/event";
 export class LoadEventsCommand implements Command<{}, {}> {
 
     private store = useEventsStore();
@@ -28,7 +28,7 @@ export class LoadEventsCommand implements Command<{}, {}> {
 
             this.store.$state.thisMonth = {
                 name: (<MonthlyGigs>val.default).month,
-                events: (<MonthlyGigs>val.default).gigs
+                events: (<MonthlyGigs>val.default).gigs.sort(this.compareDates)
             };
         });
 
@@ -37,7 +37,7 @@ export class LoadEventsCommand implements Command<{}, {}> {
 
                 this.store.$state.nextMonth = {
                     name: (<MonthlyGigs>val.default).month,
-                    events: (<MonthlyGigs>val.default).gigs
+                    events: (<MonthlyGigs>val.default).gigs.sort(this.compareDates)
                 }
             });
         } catch (e) { /* file isn't there */ }
@@ -58,5 +58,13 @@ export class LoadEventsCommand implements Command<{}, {}> {
                 .filter((i) => new Date(i.date) >= this.today)
                 .slice(0, needed))
         }
+    }
+
+    compareDates(a: Event, b: Event): number {
+        if (!a.date) return 1; // null dates come last
+        if (!b.date) return -1;
+        // return a.date.getTime() - b.date.getTime();
+        return new Date(a.date).getTime() - new Date(b.date).getTime();
+        // return Date.parse(b.date) - Date.parse(a.date);
     }
 }
