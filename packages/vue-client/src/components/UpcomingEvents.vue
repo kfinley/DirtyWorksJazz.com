@@ -9,9 +9,9 @@
     </template>
     <template #heading>
       <a v-if="event.ticketUrl" :href="event.ticketUrl" target="tickets">
-        <span v-html="event.name"></span>
+        <span style="font-weight: bold" v-html="event.name"></span>
       </a>
-      <span v-else v-html="event.name"></span><br />
+      <span v-else style="font-weight: bold" v-html="event.name"></span><br />
       <i>{{ weekday }}, {{ month }}. {{ numberOrdinal(day) }}, {{ event.time }}</i>
     </template>
     <span v-html="event.description"></span><br />
