@@ -2,12 +2,12 @@
   <header>
     <div class="wrapper">
       <nav>
-        <RouterLink :to='{ name: RouteNames.About }'>Dirty Works Jazz</RouterLink>
-        <RouterLink :to='{ name: RouteNames.Home }'>Upcoming Shows</RouterLink>
+        <RouterLink :to="{ name: RouteNames.About }">Dirty Works Jazz</RouterLink>
+        <RouterLink :to="{ name: RouteNames.Home }">Upcoming Shows</RouterLink>
         <JamsMenu></JamsMenu>
       </nav>
-      
-      <img v-if=application.showHero alt="Dirty Works Jazz" class="flyer" src="@/assets/dirty-works-jazz.jpg" />
+
+      <PhotoCarousel v-if="application.showHero" />
     </div>
   </header>
 
@@ -18,6 +18,7 @@
 import { RouterLink, RouterView } from 'vue-router'
 import JamsMenu from '@/components/JamsMenu.vue'
 import { RouteNames } from '@/router/route-names'
+import PhotoCarousel from '@/components/PhotoCarousel.vue'
 import { useApplicationStore } from '@/stores/application'
 
 const application = useApplicationStore()
@@ -28,13 +29,6 @@ const application = useApplicationStore()
 header {
   line-height: 1.5;
   max-height: 100vh;
-}
-
-.flyer {
-  display: block;
-  margin: 1rem auto 2rem;
-  width: 90%;
-  max-width: 400px;
 }
 
 nav {
@@ -58,7 +52,7 @@ nav a.router-link-exact-active:hover {
 
 nav a {
   display: inline-block;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   border-left: 1px solid var(--color-border);
 }
 
@@ -70,10 +64,6 @@ nav a:first-of-type {
   @media (orientation: landscape) {
     header {
       line-height: 1.5;
-      max-height: 5vh;
-    }
-    .flyer {
-      visibility: hidden;
     }
   }
 }
@@ -83,11 +73,6 @@ nav a:first-of-type {
     display: flex;
     place-items: center;
     padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .flyer {
-    margin: 1rem 2rem 0 0;
-    width: 525px;
   }
 
   header .wrapper {
