@@ -16,27 +16,27 @@ const images = [
     alt: 'Dirty Works Jazz Band',
   },
   {
-    src: '/public/media/images/2024.10.06_02-Persona.jpg',
+    src: '/media/images/2024.10.06_02-Persona.jpg',
     alt: 'Richard Batelaan with the Dirty Works Jazz Band at Persona',
   },
   {
-    src: '/public/media/images/2024.10.16_03-Shoe_Jam.jpg',
+    src: '/media/images/2024.10.16_03-Shoe_Jam.jpg',
     alt: 'Peter playing trumpet at the Lucky Horseshoe Jam',
   },
   {
-    src: '/public/media/images/2024.10.14_01-Waystone.jpg',
+    src: '/media/images/2024.10.14_01-Waystone.jpg',
     alt: 'Waystone Jazz jam',
   },
   {
-    src: '/public/media/images/2024.10.16_01-Shoe_Jam.jpg',
+    src: '/media/images/2024.10.16_01-Shoe_Jam.jpg',
     alt: 'Gale singing the blues at the Lucky Horseshoe Jam',
   },
   {
-    src: '/public/media/images/2024.10.06_03-Persona.jpg',
+    src: '/media/images/2024.10.06_03-Persona.jpg',
     alt: 'Jammers playing at the Persona Jazz Jam',
   },
   {
-    src: '/public/media/images/2024.10.16_11-Shoe_Jam.jpg',
+    src: '/media/images/2024.10.16_11-Shoe_Jam.jpg',
     alt: 'Ruben on the keys at the Lucky Horseshoe Jam',
   },
 ]
