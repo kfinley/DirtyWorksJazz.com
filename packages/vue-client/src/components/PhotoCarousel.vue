@@ -12,7 +12,7 @@ import { ref, onUnmounted, onMounted } from 'vue'
 
 const images = [
   {
-    src: '/src/assets/dirty-works-jazz.jpg',
+    src: '/media/images/dirty-works-jazz.jpg',
     alt: 'Dirty Works Jazz Band',
   },
   {
