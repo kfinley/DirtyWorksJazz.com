@@ -169,7 +169,7 @@ export default {
   margin: 0;
   padding: 0;
   min-width: 150px;
-  background: var(--c-red);
+  background: var(--c-dark-red);
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 4px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -191,7 +191,7 @@ export default {
   position: absolute;
   width: 20px;
   height: 20px;
-  background: var(--c-red);
+  background: var(--c-dark-red);
   border-left: 1px solid rgba(0, 0, 0, 0.1);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   transform: rotate(45deg);

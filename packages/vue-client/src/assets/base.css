@@ -19,7 +19,8 @@
   --c-text-dark-1: var(--c-white);
   --c-text-dark-2: rgba(235, 235, 235, 0.64);
 
-  --c-red: rgb(173, 16, 8);
+  --c-red: rgb(205, 23, 14);
+  --c-dark-red: rgb(173, 16, 8);
 
   --color-background: var(--c-black);
   --color-background-soft: var(--c-black-soft);

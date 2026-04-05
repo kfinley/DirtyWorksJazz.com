@@ -92,9 +92,10 @@ table {
 }
 
 th:nth-child(1) {
-  background: var(--c-red);
+  background: var(--c-dark-red);
   border-radius: 5px;
-  color: white;
+  color: var(--c-white);
+  font-weight: bold;
 }
 
 tr:nth-child(1) {
