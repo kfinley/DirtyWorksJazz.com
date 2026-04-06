@@ -208,11 +208,21 @@ const nextImage = () => {
 const next = () => {
   currentIndex.value = (currentIndex.value + 1) % images.length
 
+  let newImg = images[currentIndex.value] as { src: string; alt: string }
+
+  var link = document.getElementById('imagePreload') as HTMLLinkElement
+  if (link == null) link = document.createElement('link')
+
+  link.id = 'imagePreload'
+  link.rel = 'preload'
+  link.href = getImageUrl(newImg.src)
+  link.as = 'image'
+
+  document.body.appendChild(link)
   var img = document.getElementById('image') as HTMLImageElement
   img?.classList.remove('show')
   img?.classList.add('fade')
   setTimeout(function () {
-    let newImg = images[currentIndex.value] as { src: string; alt: string }
     img.src = getImageUrl(newImg.src)
     img.alt = newImg.alt
     img.classList.remove('fade')
