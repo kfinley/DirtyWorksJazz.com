@@ -237,7 +237,7 @@ onUnmounted(() => {
   margin: 1rem auto 2rem;
   width: 90%;
   max-width: 400px;
-  transition: opacity 1.8s ease-in-out;
+  transition: opacity 1.5s ease-in-out;
 }
 
 #image.fade {
