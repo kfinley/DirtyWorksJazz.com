@@ -1,5 +1,11 @@
 <template>
-  <img id="image" class="image" :src="getImageUrl(image?.src as string)" :alt="image?.alt" v-on:click="nextImage" />
+  <img
+    id="image"
+    class="image"
+    :src="getImageUrl(image?.src as string)"
+    :alt="image?.alt"
+    v-on:click="nextImage"
+  />
 </template>
 
 <script setup lang="ts">
@@ -10,7 +16,7 @@ https://stackoverflow.com/a/75604594
 */
 import { ref, onUnmounted, onMounted } from 'vue'
 
-const images = [
+let images = [
   {
     src: 'dirty-works-jazz.jpg',
     alt: 'Dirty Works Jazz Band',
@@ -187,8 +193,8 @@ let image = images[0]
 
 const isTimerPaused = ref(false)
 
-const getImageUrl= (image: string) => {
-  return new URL("/media/images/" + image, import.meta.url).href
+const getImageUrl = (image: string) => {
+  return new URL('/media/images/' + image, import.meta.url).href
 }
 
 const nextImage = () => {
@@ -223,12 +229,21 @@ const start = () => {
 }
 
 onMounted(() => {
+  images = [image, ...shuffleArray(images.slice(1))]
   start()
 })
 
 onUnmounted(() => {
   clearInterval(intervalId)
 })
+
+function shuffleArray(array: any[]) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1))
+    ;[array[i], array[j]] = [array[j], array[i]]
+  }
+  return array
+}
 </script>
 
 <style scoped>
