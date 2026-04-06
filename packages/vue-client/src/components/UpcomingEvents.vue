@@ -34,7 +34,7 @@ const events = useEventsStore()
 
 <style scoped>
 .icon {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 @media (min-width: 1024px) {
   .icon {

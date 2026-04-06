@@ -210,15 +210,8 @@ const next = () => {
 
   let newImg = images[currentIndex.value] as { src: string; alt: string }
 
-  var link = document.getElementById('imagePreload') as HTMLLinkElement
-  if (link == null) link = document.createElement('link')
+  preloadImage(newImg.src)
 
-  link.id = 'imagePreload'
-  link.rel = 'preload'
-  link.href = getImageUrl(newImg.src)
-  link.as = 'image'
-
-  document.body.appendChild(link)
   var img = document.getElementById('image') as HTMLImageElement
   img?.classList.remove('show')
   img?.classList.add('fade')
@@ -230,6 +223,19 @@ const next = () => {
   }, 1500)
 
   isTimerPaused ? '' : start()
+}
+
+function preloadImage(imgSrc: string) {
+  var link = document.getElementById('imagePreload') as HTMLLinkElement
+  
+  if (link == null) link = document.createElement('link')
+
+  link.id = 'imagePreload'
+  link.rel = 'preload'
+  link.href = getImageUrl(imgSrc)
+  link.as = 'image'
+
+  document.body.appendChild(link)
 }
 
 const start = () => {
