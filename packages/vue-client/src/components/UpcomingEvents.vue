@@ -15,7 +15,7 @@
       <i>{{ weekday }}, {{ month }}. {{ numberOrdinal(day) }}, {{ event.time }}</i>
     </template>
     <span v-html="event.description"></span><br />
-    <span v-if="event.featuring != null" v-html="Featuring burlesque dancer {{ event.featuring }}<br />"></span>
+    <span v-if="event.featuring != null" v-html="featuring(event.featuring)"></span>
     <i>{{ event.players }}</i>
   </EventItem>
   <h2 style="text-align: center !important;">
@@ -30,6 +30,10 @@ import { numberOrdinal } from '@/utils'
 import { useEventsStore } from '@/stores/events'
 
 const events = useEventsStore()
+
+const featuring = (featuring) => {
+  return `Featuring burlesque dancer ${featuring} </br>` 
+}
 </script>
 
 <style scoped>
