@@ -30,7 +30,7 @@
           </td>
         </tr>
         <tr v-if="event.featuring">
-          <td>Featuring {{ event.featuring }}</td>
+          <td v-html=featuring(event.featuring)></td>
         </tr>
         <tr>
           <td v-html="event.location"></td>
@@ -78,6 +78,10 @@
 import { useEventsStore } from '@/stores/events'
 
 const events = useEventsStore()
+
+const featuring = (featuring) => {
+  return `Featuring ${featuring}`
+}
 </script>
 
 <style>
