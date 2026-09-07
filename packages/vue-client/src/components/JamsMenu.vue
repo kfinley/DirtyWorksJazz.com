@@ -4,10 +4,9 @@
       <a href="#" class="menu" @click="toggle">Jams</a>
     </template>
     <div class="text-center dropdown-items">
-      <div @click="toggle"><RouterLink :to='{ name: RouteNames.BurlesqueJam }'>Burlesque Jam</RouterLink></div>
-      <div @click="toggle"><RouterLink :to='{ name: RouteNames.HopOastJam }'>Hop Oast</RouterLink></div>
-      <div @click="toggle"><RouterLink :to='{ name: RouteNames.ShoeJam }'>Lucky Horseshoe</RouterLink></div>
-      <div @click="toggle"><RouterLink :to='{ name: RouteNames.ParisJam }'>Paris 75</RouterLink></div>
+      <!-- <div @click="toggle"><RouterLink :to='{ name: RouteNames.HopOastJam }'>Hop Oast</RouterLink></div> -->
+      <!-- <div @click="toggle"><RouterLink :to='{ name: RouteNames.ShoeJam }'>Lucky Horseshoe</RouterLink></div> -->
+      <div @click="toggle"><RouterLink :to='{ name: RouteNames.BurlesqueJam }'>Paris 75 Burlesque Jam</RouterLink></div>
       <div @click="toggle"><RouterLink :to='{ name: RouteNames.PersonaJam }'>Persona</RouterLink></div>
     </div>
   </DropDown>

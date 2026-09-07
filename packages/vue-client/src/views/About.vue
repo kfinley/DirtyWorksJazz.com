@@ -7,18 +7,22 @@
       gigs, and presents local jazz groups at venues around San Francisco. The group has several
       regular players including
       <a href="https://www.richardbatelaan.com" target="richardbatelaan">Richard Batelaan</a>, Tim
-      Shea, <a href="https://www.jonvenker.com/" target="jonvenker">Jon Venker</a>, <a href="https://jefforchardjazz.com" target="jefforchard">Jeff Orchard</a>, and more local SF
-      players.
+      Shea, <a href="https://www.jonvenker.com/" target="jonvenker">Jon Venker</a>, <a 
+      href="https://jefforchardjazz.com" target="jefforchard">Jeff Orchard</a>, Dalton Yoder, Chris 
+      Hess, Steve Nelson, Paul Aubert, and more local SF players.
     </p>
     <p>
-      A Dirty Works Jam transforms a venue into a buzzing jazz laboratory. Far from casual
-      background music, these jams are professional performances where the house band sets a high
-      bar and invites local players to sit in.
+      So what is a Dirty Works Jam? Our jams consist of a small gorup of core players and local and visiting 
+      players that join us to play. These jams are far from casual background music, they are professional 
+      performances where the house band sets a high bar and players can jump in and do their thing. We run 
+      pretty casual and rarely have a set list. We call tunes on the fly and take requests. We have only two 
+      rules: 1. Sound good and 2. Have Fun!!
     </p>
     <p>
-      The group's repertoire is heavily inspired by the “Golden Era” of jazz (1945–1965), especially
-      the catalogs of Riverside, Impulse, and Blue Note records. Expect a hard-driving mix of bebop,
-      hard bop, heavy swing, and Latin jazz.
+      The group's repertoire is heavily inspired by what we call the classic jazz from the “Golden Era” of 
+      jazz (1945–1965), especially the catalogs of Riverside, Impulse, and Blue Note records. Expect a 
+      hard-driving mix of bebop, hard bop, soul jazz, heavy swing, ballads & love sones, latin jazz, and of 
+      course the blues.
     </p>
     <p>
       Unlike “casual jam circles,” a Dirty Works Jazz Jam is first and foremost a show for the
@@ -26,7 +30,7 @@
       engaging experience for the audience. 
     </p>
     <p>
-      Dirty Works Jazz also hosts the only Burlesque & Jazz Jam in San Francisco every 1st Thursday
+      Dirty Works Jazz also hosts the only Burlesque & Jazz Jam in San Francisco every 1st & 3rd Thursday
       at Paris 75 in the historic North Beach neighborhood. The show features our favorite
       burlesque dancer Raya!
     </p>
