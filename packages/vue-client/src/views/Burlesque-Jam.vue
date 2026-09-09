@@ -4,16 +4,16 @@
       <h2>Burlesque Jazz Jam @ Paris 75</h2>
     </div>
     <p>
-      Every Thursdays
+      On the 1st & 3rd Thursdays
       <a href="https://kylefinley.net" target="new">Kyle Finley</a> and the Dirty Works Jazz Band
-      host San Francisco's only regular burlesque show backed by a live jazz band in historic North
-      Beach at <a href="https://lppsf.com" target="paris">Paris 75</a>, located at 515 Broadway,
+      host San Francisco's only regular burlesque show backed by a live jazz band in SF's historic North
+      Beach neighborhood at <a href="https://lppsf.com" target="paris">Paris 75</a>, located at 515 Broadway,
       from 8 to 11 PM.
     </p>
     <p>
-      The Dirty Works Burlesque Jam features one of our burlesque dancers performing several acts
-      while the band plays. Dance performances are during the 9 o'clock set. We continue to
-      jam between dances and keep the party going all night!!!
+      The Dirty Works Burlesque Jam features <a href="https://www.rayarosebrice.com" target="raya">
+      Raya Rose Brice</a> performing several acts while the band plays. Dance performances are during 
+      the 9 o'clock set. We continue to jam between dances and keep the party going all night!!!
     </p>
     <p>
       This is a straight ahead open jam and we welcome players to join us. We play classic jazz

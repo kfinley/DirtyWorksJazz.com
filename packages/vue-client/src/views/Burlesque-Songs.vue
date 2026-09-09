@@ -14,6 +14,7 @@
       <li>Bye Bye Blackbird</li>
       <li>C'est Si Bon</li>
       <li>Caravan</li>
+      <li>Cheek to Cheek</li>
       <li>Comin Home Baby</li>
       <li>Days of Wine & Roses</li>
       <li>Don't Get Around Much Anymore</li>
@@ -39,6 +40,7 @@
       <li>Misty</li>
       <li>Moanin'</li>
       <li>Moonglow</li>
+      <li>My Little Suede Shoes</li>
       <li>Nature Boy</li>
       <li>Old Devil Moon</li>
       <li>On the Sunny Side of the Street</li>
