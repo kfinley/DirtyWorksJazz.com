@@ -34,5 +34,8 @@
   },
   "devDependencies": {
     "@types/node": "^25.3.0"
+  },
+  "dependencies": {
+    "package-lock.json": "^1.0.0"
   }
 }
