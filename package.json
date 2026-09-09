@@ -19,6 +19,8 @@
     "build:clean": "npm run clean:js-files && npm run build:client",
     "build:cdk": "npm run build -w @dirtyworksjazz.com/infrastructure",
     "build:client": "npm run generate-sitemap && npm run build-only -w @dirtyworksjazz.com/vue-client && npm run post-build:fix-img-paths",
+    "build:splitter": "npm run build -w @dirtyworksjazz.com/splitter",
+    "splitter": "npm run start -w @dirtyworksjazz.com/splitter",
     "cdk": "cd infrastructure && npm run cdk",
     "clean:js-files": "./.devcontainer/scripts/clean-js-files.sh",
     "dev:init": "./.devcontainer/scripts/dev-init.sh",

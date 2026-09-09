@@ -1,4 +1,4 @@
-ARG VARIANT=22-bullseye
+ARG VARIANT=22-bookworm
 FROM mcr.microsoft.com/vscode/devcontainers/typescript-node:${VARIANT}
 
 RUN su node -c "source /usr/local/share/nvm/nvm.sh && \
@@ -18,23 +18,47 @@ RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d && \
 
 # Install Docker CE CLI
 RUN apt-get update \
-  && curl -fsSL https://download.docker.com/linux/debian/gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/docker.gpg \
-  && sudo chmod a+r /etc/apt/trusted.gpg.d/docker.gpg \
-  && echo \ 
-  "deb [arch=$(dpkg --print-architecture) \
-  signed-by=/etc/apt/trusted.gpg.d/docker.gpg] \ 
-  https://download.docker.com/linux/debian \ 
-  $(lsb_release -cs) stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list \
+  && apt-get install -y --no-install-recommends \
+  ca-certificates \
+  curl \
+  gnupg \
+  && install -m 0755 -d /etc/apt/keyrings \
+  && curl -fsSL https://download.docker.com/linux/debian/gpg \
+  -o /etc/apt/keyrings/docker.asc \
+  && chmod a+r /etc/apt/keyrings/docker.asc \
+  && printf '%s\n' \
+  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/debian bookworm stable" \
+  > /etc/apt/sources.list.d/docker.list \
   && apt-get update \
-  && apt list -a docker-ce | head \
-  && apt-get install -y docker-ce=5:24.0.7-1~debian.11~bullseye docker-ce-cli=5:24.0.7-1~debian.11~bullseye containerd.io 
+  && apt-get install -y --no-install-recommends docker-ce-cli docker-buildx-plugin docker-compose-plugin \
+  && rm -rf /var/lib/apt/lists/*
+  
+# Install python and sound tools
+ENV VIRTUAL_ENV=/opt/venv
+ENV PATH="${VIRTUAL_ENV}/bin:${PATH}"
 
+RUN apt-get update \
+  && apt-get install -y --no-install-recommends \
+  ffmpeg \
+  python3 \
+  python3-dev \
+  python3-venv \
+  build-essential \
+  pkg-config \
+  libopus-dev \
+  && python3 -m venv "${VIRTUAL_ENV}" \
+  && "${VIRTUAL_ENV}/bin/python" -m pip install --upgrade pip setuptools wheel \
+  && PKG_CONFIG_PATH=/usr/lib/aarch64-linux-gnu/pkgconfig:/usr/lib/pkgconfig \
+  "${VIRTUAL_ENV}/bin/python" -m pip install --no-cache-dir \
+  demucs \
+  diffq \
+  && apt-get clean \
+  && rm -rf /var/lib/apt/lists/* /tmp/* /root/.cache
+  
 # Install Docker Compose
 RUN export LATEST_COMPOSE_VERSION=$(curl -sSL "https://api.github.com/repos/docker/compose/releases/latest" | grep -o -P '(?<="tag_name": ").+(?=")') \
   && curl -sSL "https://github.com/docker/compose/releases/download/${LATEST_COMPOSE_VERSION}/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose \
   && chmod +x /usr/local/bin/docker-compose
-  
 ARG NONROOT_USER=node
 
 RUN echo -e "#!/bin/sh\n\
@@ -46,6 +70,10 @@ RUN echo -e "#!/bin/sh\n\
   fi\n\
   exec \"\$@\"" > /usr/local/share/docker-init.sh \
   && chmod +x /usr/local/share/docker-init.sh
+
+# run the installation script
+RUN curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh \
+  && /bin/zsh ~/.zshrc
 
 # VS Code overrides ENTRYPOINT and CMD when executing `docker run` by default.
 # Setting the ENTRYPOINT to docker-init.sh will configure non-root access to
